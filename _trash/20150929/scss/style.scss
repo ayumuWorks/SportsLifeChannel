@@ -1,0 +1,315 @@
+@charset "UTF-8";
+
+$color-01: #9c9202; //黄土色
+
+$color-02: #eceded; //灰色
+
+$color-03: #459df0; //青
+
+.color-01 {
+	color: $color-01;
+}
+.color-02 {
+	color: $color-02;
+}
+.color-03 {
+	color: $color-03;
+}
+
+
+
+//設定
+body {
+	font-family: 'Lora', serif;
+	background-color: $color-02;
+}
+h1,h2,h3,h4 {
+	font-family: 'Lora', serif;
+}
+.uk-container {
+	max-width: 100%;
+}
+.uk-grid-margin {
+	margin-top: 10px;
+}
+
+
+//parts-------------------------------------------------
+.hidden-ss {
+	@media screen and (max-width: 479px) {
+		display: none;
+	}
+}
+.visible-ss {
+	@media screen and (min-width: 479px) {
+		display: none;
+	}
+}
+.clear {
+	clear: both;
+}
+
+//common
+.name {
+	background-color: gray;
+	color: white;
+	padding: 10px;
+	p {
+		margin: 0;
+	}
+	h2 {
+		font-size: 18px;
+		color: white;
+		text-align: center;
+		margin: 0;
+	}
+}
+.profile-panel {
+	margin-top: 30px;
+	h3 {
+		padding-bottom: 9px;
+		border-bottom: 2px solid $color-01;
+	}
+	.text {
+		dd {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.com-panel-01 {
+	background-color: $color-02;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 0px 0;
+	.content-01 {
+		float: left;
+		width: 70%;
+	}
+	.content-02 {
+		float: right;
+		width: 30%;
+		padding-left: 5px;
+	}
+}
+.white-panel {
+	background-color: white;
+	&.tit {
+		padding: 10px;
+	}
+}
+
+.com-tit-01 {
+	background-color: $color-01;
+	color: white;
+	display: inline;
+	padding: 10px;
+}
+.com-tit-02 {
+	border-bottom: 3px  dotted $color-01;
+	width: 100%;
+}
+
+//header------------------------------------------------
+header {
+	padding-top: 20px;
+	.sub {
+		font-size: 25px;
+	}
+	#gnav {
+		width: 100%;
+		color: white;
+	    ul {
+	    	overflow: hidden;
+	    	list-style: none;
+	    	padding-left: 0px;
+			li {
+				background-color: #444;	
+				float: left;
+				width: 16%;
+				text-align: center;
+				vertical-align: middle;
+				padding: 5px 0;
+				margin-right: 0.8%;
+				a {
+					color: white;
+				}
+				@media screen and (max-width: 768px) {
+					width: 32%;
+					margin-bottom: 3px;
+				}
+			}
+			.register {
+				background-color: $color-01;	
+			}
+			.login {
+				background-color: $color-01;	
+				margin: 0;
+			}
+		}
+	}
+}
+
+//footer------------------------------------------------
+footer {
+	background-color: gray;
+	color: white;
+	padding: 40px 0;
+	margin-top: 30px;
+	section {
+		@media screen and (min-width: 968px) {
+			border-right: 1px solid white;
+		}
+	}
+	.noborder {
+		border: none;
+	}
+}
+
+//ランキング------------------------------------------------
+#rank {
+	margin-bottom: 30px;
+	.img-panel {
+		background-color: $color-02;
+		.uk-grid {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: -10px;
+			> * {
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+//ニュース------------------------------------------------
+#news {
+	margin-bottom: 60px;
+	.news-list {
+		background-color: $color-02;
+		padding-top: 15px;
+	}
+}
+
+
+//home------------------------------------------------
+#home-01 {
+	.uk-grid {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: -10px;
+		> * {
+			padding-left: 10px;
+		}
+	}
+}
+
+//人物検索------------------------------------------------
+#human-01 {
+	font-size:50px;
+	input {
+		font-size: 100%;
+		width: 100%;
+	}
+}
+#human-02 {
+	.human-nav {
+		float: right;
+		display: block
+	}
+	.content-01 {
+		.uk-grid {
+			margin-bottom: 15px;
+			margin-left: -10px;
+			> * {
+				padding-left: 10px;
+			}
+		}
+		.uk-scrollspy-init-inview {
+			a:hover {
+				opacity: 0.5;
+				background-image: url("../images/01_02.png");
+				z-index: 100;
+			}
+		}
+	}
+	.content-02 {
+		.category {
+			h2 {
+				font-size: 18px;
+			}
+			ul {
+				list-style: none;
+				padding-left: 0;
+				li {
+					background-color: $color-03;
+					color: white;
+					text-align: center;
+					padding: 10px 0;
+					margin-bottom: 10px; 
+				}	
+			}
+		}
+	}
+}
+
+//プロフェール------------------------------------------------
+#profile-01 { 
+	ul {
+		list-style: none;
+		padding-left: 0;
+		li {
+			margin-bottom: 15px
+		}
+	}
+}
+
+//チャンネル------------------------------------------------
+#channel-02 {
+	background-color: $color-03;
+	text-align: center;
+	padding: 10px;
+	h2 {
+		color: white;
+		font-size: 18px;
+	}
+} 
+
+#channel-03,#channel-04,#channel-05 {
+	text-align: center;
+	.white-panel {
+		padding: 20px;
+	}
+	.text {
+		line-height: 2em;
+		padding: 6% 0 10% 0;
+	}
+}
+
+//会員登録------------------------------------------------
+.register-form {
+	.uk-container-center {
+		padding-top: 20px;
+		padding-bottom: 40px;
+		p {
+			padding-left:10px;
+		}
+		h3 {
+			text-align: center;
+		}
+		table {
+			max-width: 700px;
+			margin-bottom: 20px;
+			text-align: center;
+			.white-font {
+				color: white;
+				font-size: 15px;
+			}
+		}
+		.submit {
+			text-align: center;
+		}
+	}
+}
+
+

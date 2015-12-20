@@ -1,0 +1,350 @@
+@charset "UTF-8";
+/* line 9, ../scss/style.scss */
+.color-01 {
+  color: #9c9202;
+}
+
+/* line 12, ../scss/style.scss */
+.color-02 {
+  color: #eceded;
+}
+
+/* line 15, ../scss/style.scss */
+.color-03 {
+  color: #459df0;
+}
+
+/* line 22, ../scss/style.scss */
+body {
+  font-family: 'Lora', serif;
+  background-color: #eceded;
+}
+
+/* line 26, ../scss/style.scss */
+h1, h2, h3, h4 {
+  font-family: 'Lora', serif;
+}
+
+/* line 29, ../scss/style.scss */
+.uk-container {
+  max-width: 100%;
+}
+
+/* line 32, ../scss/style.scss */
+.uk-grid-margin {
+  margin-top: 10px;
+}
+
+@media screen and (max-width: 479px) {
+  /* line 38, ../scss/style.scss */
+  .hidden-ss {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 479px) {
+  /* line 43, ../scss/style.scss */
+  .visible-ss {
+    display: none;
+  }
+}
+
+/* line 48, ../scss/style.scss */
+.clear {
+  clear: both;
+}
+
+/* line 53, ../scss/style.scss */
+.name {
+  background-color: gray;
+  color: white;
+  padding: 10px;
+}
+/* line 57, ../scss/style.scss */
+.name p {
+  margin: 0;
+}
+/* line 60, ../scss/style.scss */
+.name h2 {
+  font-size: 18px;
+  color: white;
+  text-align: center;
+  margin: 0;
+}
+
+/* line 67, ../scss/style.scss */
+.profile-panel {
+  margin-top: 30px;
+}
+/* line 69, ../scss/style.scss */
+.profile-panel h3 {
+  padding-bottom: 9px;
+  border-bottom: 2px solid #9c9202;
+}
+/* line 74, ../scss/style.scss */
+.profile-panel .text dd {
+  margin-bottom: 20px;
+}
+
+/* line 80, ../scss/style.scss */
+.com-panel-01 {
+  background-color: #eceded;
+  margin-bottom: 20px;
+  overflow: hidden;
+  padding: 0px 0;
+}
+/* line 85, ../scss/style.scss */
+.com-panel-01 .content-01 {
+  float: left;
+  width: 70%;
+}
+/* line 89, ../scss/style.scss */
+.com-panel-01 .content-02 {
+  float: right;
+  width: 30%;
+  padding-left: 5px;
+}
+
+/* line 95, ../scss/style.scss */
+.white-panel {
+  background-color: white;
+}
+/* line 97, ../scss/style.scss */
+.white-panel.tit {
+  padding: 10px;
+}
+
+/* line 102, ../scss/style.scss */
+.com-tit-01 {
+  background-color: #9c9202;
+  color: white;
+  display: inline;
+  padding: 10px;
+}
+
+/* line 108, ../scss/style.scss */
+.com-tit-02 {
+  border-bottom: 3px dotted #9c9202;
+  width: 100%;
+}
+
+/* line 114, ../scss/style.scss */
+header {
+  padding-top: 20px;
+}
+/* line 116, ../scss/style.scss */
+header .sub {
+  font-size: 25px;
+}
+/* line 119, ../scss/style.scss */
+header #gnav {
+  width: 100%;
+  color: white;
+}
+/* line 122, ../scss/style.scss */
+header #gnav ul {
+  overflow: hidden;
+  list-style: none;
+  padding-left: 0px;
+}
+/* line 126, ../scss/style.scss */
+header #gnav ul li {
+  background-color: #444;
+  float: left;
+  width: 16%;
+  text-align: center;
+  vertical-align: middle;
+  padding: 5px 0;
+  margin-right: 0.8%;
+}
+/* line 134, ../scss/style.scss */
+header #gnav ul li a {
+  color: white;
+}
+@media screen and (max-width: 768px) {
+  /* line 126, ../scss/style.scss */
+  header #gnav ul li {
+    width: 32%;
+    margin-bottom: 3px;
+  }
+}
+/* line 142, ../scss/style.scss */
+header #gnav ul .register {
+  background-color: #9c9202;
+}
+/* line 145, ../scss/style.scss */
+header #gnav ul .login {
+  background-color: #9c9202;
+  margin: 0;
+}
+
+/* line 154, ../scss/style.scss */
+footer {
+  background-color: gray;
+  color: white;
+  padding: 40px 0;
+  margin-top: 30px;
+}
+@media screen and (min-width: 968px) {
+  /* line 159, ../scss/style.scss */
+  footer section {
+    border-right: 1px solid white;
+  }
+}
+/* line 164, ../scss/style.scss */
+footer .noborder {
+  border: none;
+}
+
+/* line 170, ../scss/style.scss */
+#rank {
+  margin-bottom: 30px;
+}
+/* line 172, ../scss/style.scss */
+#rank .img-panel {
+  background-color: #eceded;
+}
+/* line 174, ../scss/style.scss */
+#rank .img-panel .uk-grid {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: -10px;
+}
+/* line 178, ../scss/style.scss */
+#rank .img-panel .uk-grid > * {
+  padding-left: 10px;
+}
+
+/* line 186, ../scss/style.scss */
+#news {
+  margin-bottom: 60px;
+}
+/* line 188, ../scss/style.scss */
+#news .news-list {
+  background-color: #eceded;
+  padding-top: 15px;
+}
+
+/* line 197, ../scss/style.scss */
+#home-01 .uk-grid {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: -10px;
+}
+/* line 201, ../scss/style.scss */
+#home-01 .uk-grid > * {
+  padding-left: 10px;
+}
+
+/* line 208, ../scss/style.scss */
+#human-01 {
+  font-size: 50px;
+}
+/* line 210, ../scss/style.scss */
+#human-01 input {
+  font-size: 100%;
+  width: 100%;
+}
+
+/* line 216, ../scss/style.scss */
+#human-02 .human-nav {
+  float: right;
+  display: block;
+}
+/* line 221, ../scss/style.scss */
+#human-02 .content-01 .uk-grid {
+  margin-bottom: 15px;
+  margin-left: -10px;
+}
+/* line 224, ../scss/style.scss */
+#human-02 .content-01 .uk-grid > * {
+  padding-left: 10px;
+}
+/* line 229, ../scss/style.scss */
+#human-02 .content-01 .uk-scrollspy-init-inview a:hover {
+  opacity: 0.5;
+  background-image: url("../images/01_02.png");
+  z-index: 100;
+}
+/* line 238, ../scss/style.scss */
+#human-02 .content-02 .category h2 {
+  font-size: 18px;
+}
+/* line 241, ../scss/style.scss */
+#human-02 .content-02 .category ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 244, ../scss/style.scss */
+#human-02 .content-02 .category ul li {
+  background-color: #459df0;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+/* line 258, ../scss/style.scss */
+#profile-01 ul {
+  list-style: none;
+  padding-left: 0;
+}
+/* line 261, ../scss/style.scss */
+#profile-01 ul li {
+  margin-bottom: 15px;
+}
+
+/* line 268, ../scss/style.scss */
+#channel-02 {
+  background-color: #459df0;
+  text-align: center;
+  padding: 10px;
+}
+/* line 272, ../scss/style.scss */
+#channel-02 h2 {
+  color: white;
+  font-size: 18px;
+}
+
+/* line 278, ../scss/style.scss */
+#channel-03, #channel-04, #channel-05 {
+  text-align: center;
+}
+/* line 280, ../scss/style.scss */
+#channel-03 .white-panel, #channel-04 .white-panel, #channel-05 .white-panel {
+  padding: 20px;
+}
+/* line 283, ../scss/style.scss */
+#channel-03 .text, #channel-04 .text, #channel-05 .text {
+  line-height: 2em;
+  padding: 6% 0 10% 0;
+}
+
+/* line 291, ../scss/style.scss */
+.register-form .uk-container-center {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+/* line 294, ../scss/style.scss */
+.register-form .uk-container-center p {
+  padding-left: 10px;
+}
+/* line 297, ../scss/style.scss */
+.register-form .uk-container-center h3 {
+  text-align: center;
+}
+/* line 300, ../scss/style.scss */
+.register-form .uk-container-center table {
+  max-width: 700px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+/* line 304, ../scss/style.scss */
+.register-form .uk-container-center table .white-font {
+  color: white;
+  font-size: 15px;
+}
+/* line 309, ../scss/style.scss */
+.register-form .uk-container-center .submit {
+  text-align: center;
+}

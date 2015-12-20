@@ -1,0 +1,594 @@
+@charset "UTF-8";
+
+$color-01: #9c9202; //黄土色
+
+$color-02: #eceded; //灰色
+
+$color-03: #459df0; //青
+
+.color-01 {
+	color: $color-01;
+}
+.color-02 {
+	color: $color-02;
+}
+.color-03 {
+	color: $color-03;
+}
+
+
+
+//設定
+body {
+	font-family: 'Lora', serif;
+	background-color: $color-02;
+}
+h1,h2,h3,h4 {
+	font-family: 'Lora', serif;
+}
+a:hover {
+	text-decoration: none;
+}
+.uk-container {
+	max-width: 100%;
+}
+.uk-grid-margin {
+	margin-top: 10px;
+}
+
+//parts-------------------------------------------------
+.hidden-ss {
+	@media screen and (max-width: 479px) {
+		display: none;
+	}
+}
+.visible-ss {
+	@media screen and (min-width: 479px) {
+		display: none;
+	}
+}
+.clear {
+	clear: both;
+}
+
+//common
+.name {
+	color: white;
+	text-shadow: 2px 2px 10px #000;
+	font-weight: bold;
+	padding: 10px;
+	p {
+		margin: 0;
+	}
+	h2 {
+		color: white;
+		text-shadow: 2px 2px 10px #000;
+		font-size: 18px;
+		text-align: center;
+		font-weight: bold;
+		margin: 0;
+	}
+}
+.profile-panel {
+	margin-top: 30px;
+	h3 {
+		padding-bottom: 9px;
+		border-bottom: 2px solid $color-01;
+	}
+	.text {
+		dd {
+			margin-bottom: 20px;
+		}
+	}
+}
+
+.com-panel-01 {
+	background-color: $color-02;
+	margin-bottom: 20px;
+	overflow: hidden;
+	padding: 0px 0;
+	@media screen and (min-width: 479px) {
+		.content-01 {
+			float: left;
+			width: 70%;
+		}
+		.content-02 {
+			float: right;
+			width: 30%;
+			padding-left: 5px;
+		}
+	}
+}
+.com-panel-02 {
+	img {
+		position: relative;
+		border-radius: 5px;
+	}
+	.name {
+		position: absolute;
+		bottom: 5%;
+		right: 5%;
+	}
+	.img:hover {
+		opacity: 0.5;
+	}
+}
+
+.white-panel {
+	background-color: white;
+	&.tit {
+		padding: 10px;
+	}
+}
+.gray-panel {
+	background-color: $color-02;
+}
+.blue-panel {
+	background-color: $color-03;
+	color: white;
+	&.tit {
+		padding: 10px;
+	}
+}
+
+.com-tit-01 {
+	background-color: $color-01;
+	color: white;
+	display: inline;
+	padding: 10px;
+}
+.com-tit-02 {
+	border-bottom: 3px  dotted $color-01;
+	width: 100%;
+}
+
+//header------------------------------------------------
+header {
+	h1 {
+		margin-top: 20px;
+	}
+	.sub {
+		font-size: 35px;
+		@media screen and (min-width: 479px) {
+			font-size: 25px;
+		}
+	}
+	#gnav {
+		width: 100%;
+		color: white;
+	    ul {
+	    	overflow: hidden;
+	    	list-style: none;
+	    	padding-left: 0px;
+			li {
+				background-color: #444;
+				border-radius: 5px;	
+				border-bottom: 2px solid #000;
+				float: left;
+				width: 24.3%;
+				text-align: center;
+				vertical-align: middle;
+				padding: 6px 0 4px 0;
+				margin-right: 0.8%;
+				color: white;
+				@media screen and (max-width: 768px) {
+					width: 49%;
+					margin-bottom: 3px;
+				}
+			}
+			li:hover {
+				opacity: 0.8;
+			}
+			.register {
+				background-color: $color-01;
+				border-bottom:2px solid #746c02;
+			}
+			.login {
+				background-color: $color-01;	
+				margin: 0;
+    			border-bottom:2px solid #746c02;
+			}
+		}
+	}
+}
+
+//footer------------------------------------------------
+footer {
+	background-color: gray;
+	color: white;
+	padding: 40px 0;
+	margin-top: 30px;
+	section {
+		@media screen and (min-width: 968px) {
+			border-right: 1px solid white;
+		}
+	}
+	.noborder {
+		border: none;
+	}
+}
+
+//home--------------------------------------------------
+@keyframes snow {
+ 0% {background-image: url("../images/home/01_01_s.png");}
+ 50% {background-image: url("../images/home/01_03.png");}
+ 100% {background-image: url("../images/home/01_02.png");;}
+}
+
+.home-tit {
+	text-align: center;
+	margin-bottom: 20px;
+	letter-spacing: 10px;
+	font-size: 40px;
+	.color-01 {
+		font-size: 100px;
+	}
+}
+
+#home {
+	background-image: url("../images/home/01_01_s.png");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 110%;
+    background-color: #000;
+    animation: snow 20s linear infinite;
+    @media screen and (min-width: 479px) {
+		background-image: url("../images/home/01_01.png"); 
+	}
+}
+
+#home-01 {
+    color: white;
+    height: 100vh;
+    padding-left: 30px;
+    position: relative;
+    h1 {
+    	padding-top: 20px;
+    	color: white;
+    	font-size: 40px;
+    	margin-bottom: 0; 
+    	@media screen and (min-width: 768px) {
+			font-size: 60px;
+		}
+    }
+    .sub-tit {
+    	font-size: 14px;
+    	@media screen and (min-width: 768px) {
+			font-size: 20px;
+		}
+    }
+    .button {
+    	position: absolute;
+    	top: 6%;
+    	right: 3%;
+		background-color: $color-01;	
+		margin: 0;
+	    border-bottom: 2px solid #746c02;
+	    border-radius: 5px;
+		width: 14%;
+		text-align: center;
+		vertical-align: middle;
+		padding: 2% 5% 2.3% 5%;
+		max-height: 10px;
+		max-width: 80px;
+		color: white;
+	}
+	.button:hover {
+		
+	}
+	.message {
+		font-size: 25px;
+		letter-spacing: 0.5em;
+		position: absolute;
+		top: 40%;
+		right: 15%;
+		@media screen and (min-width: 768px) {
+			letter-spacing: 0.8em;
+			font-size: 30px;
+			top: 40%;
+			right: 25%;
+		}
+	}
+}
+
+#home-02 {
+	background-color: $color-02;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	.white-panel {
+		padding-top: 5%;
+		padding-bottom: 5%;
+		.tit {
+			text-align: center;
+		}
+	}
+	.uk-grid-margin {
+		margin-top: 25px;
+	}
+	@media screen and (min-width: 968px) {
+		height: 100vh;
+		padding-top: 8%;
+	}
+}
+
+#home-03 {
+	height: 100vh;
+	padding-top: 10%;
+	padding-bottom: 10%;
+	background-color: $color-03;
+	color: white;
+	text-align: center;
+	h2 {
+		color: white;
+		text-align: center;
+	}
+	.button {
+		background-color: $color-01;
+	    border-bottom: 2px solid #746c02;
+	    border-radius: 5px;
+		width: 25%;
+		text-align: center;
+		vertical-align: middle;
+		padding: 2% 5% 2.5% 5%;
+		max-height: 10px;
+		max-width: 100px;
+		color: white;
+		display: inline-block;
+		text-align: center;
+	}
+}
+
+#home-04 {
+	padding-top: 7%;
+	padding-bottom: 5%;
+	color: white;
+	text-align: center;
+	h2 {
+		color: white;
+		text-align: center;
+	}
+	@media screen and (min-width: 968px) {
+		height: 100vh;
+	}
+}
+
+
+//ランキング------------------------------------------------
+#rank {
+	margin-bottom: 30px;
+	.img-panel {
+		background-color: $color-02;
+		.uk-grid {
+			margin-top: 10px;
+			margin-bottom: 10px;
+			margin-left: -10px;
+			> * {
+				padding-left: 10px;
+			}
+		}
+	}
+}
+
+//ニュース------------------------------------------------
+#news {
+	margin-bottom: 60px;
+	.news-list {
+		background-color: $color-02;
+		padding-top: 15px;
+	}
+}
+
+
+//home------------------------------------------------
+#top-01 {
+	.uk-grid {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: -10px;
+		> * {
+			padding-left: 10px;
+		}
+	}
+}
+
+//人物検索------------------------------------------------
+#search-engine {
+	.search-form {
+	  position: relative;
+	  margin-top: 0;
+	  margin-bottom: 20px; 
+	  width: 26em;
+	  max-width: 100%;
+	}
+	.search-form-input {
+	  padding: 0;
+	  padding-left: .5em;
+	  padding-right: 2.5em;
+	  width: 100%;
+	  height: 2em;
+	  border: 1px solid #383030;
+	  border-radius: 0;
+	  background: #FFF;
+	  font-size: inherit;
+	  color: inherit;
+	  box-sizing: border-box;
+	  -webkit-appearance: none;
+	}
+	.search-form-button {
+	  position: absolute;
+	  top: 0;
+	  right: 0;
+	  padding: 0;
+	  width: 2em;
+	  height: 2em;
+	  border: 0;
+	  border-radius: 0;
+	  background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAYAAACM/rhtAAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAALEgAACxIB0t1+/AAAABV0RVh0Q3JlYXRpb24gVGltZQAxNC42LjIwH0alLAAAAB50RVh0U29mdHdhcmUAQWRvYmUgRmlyZXdvcmtzIENTNS4xqx9I6wAAAvtJREFUWIXNmDFrFEEUx/+zMYKFGgh2IkGxEvRAWzGCTUyE8xN4Qqp8gxSBFGJl4ycxhZhKvCIiWEiioFioaGl1JoqQ5PZnMXNxb29md2f35PzDcLc7O29++97uzHtrVFFAS1Jb0ryklqTTuUt+SNqW1JW0YYzZrmi3KkLQQBvoEq8u0K4CWNSKBs7VBPOBzo0VEOu13hjgBuoR8GY0INCpMGEK9IFD99t35wYtpE4soMl7TtKTUDQkHUr6IumZpE1JXyVNSTov6ZakRUnnJE1Lw7YzumuM2cgCVhL2mQuFdR94AVwtsTEFXAdeAQcBWz0yz2SZB7PGfS9ECuwBK8Dxard6ZG8N+BkIeTcKEPtS+LQLLMeAZSY+Diy7G/SpHQPo894+sFIHLgf6APsyeb1YCgi0PINTBx0V1gDgKeA1/lC3ygAT2e0rr0NJq8aY/aaAxphdSauS+p7u0p0mFN5PaZqGlolopWlqgG++MFfxYCvPLGkzSZKGu/hfOVvPne2s8nOPjtVoViJJT8fAldeGRgF9cw8pCZz/2BhnVJ/rDAoBju35y2iqzqAQ4MUGICFdqjMokc2E87rdjMWrJY1Gxjf3kBLZND2vO+MgGgg4JumGp6u0LEhka4isjKSzwLXmaEdalHRGox7Mzz2qgq3uJXCyKRk2aXhbd6sbGPHtJgfAWkO4E8BjCpKFkvFHf0Lp1h5wj5pJAzaP/B2wXaniyx6EEtZfwENgOgJsFnjk4Hyh3apoZ+igKOU/AN4AC9g30iuXFCwB7/CHdaD3wEwVwDpF03dJW7JF0wfZAumCpAVJNyXNyu4aZbvRjqR5Y0yvCNB3sqjsTHOtz3DZGavtIk96AV3HuAv3onAHIYOArnOcnz4uO5AoyELAnDfrgHbJLCXATCxkJcDMxS1g3U3sC3/P9a1jP9X5bERB4qq6f9aaQk4EMAZyYoAxkKbMUBMZU7xWu1B2JV0JXLIzUUCpFPL+xEKch/SEuzPRZ7AEsuPO/T+AGcjs4q4/5DLMorgW7doAAAAASUVORK5CYII=);
+	  background-repeat: no-repeat;
+	  background-position: center center;
+	  background-size: 50% 50%;
+	  background-color: #383030;
+	  font-size: inherit;
+	  line-height: inherit;
+	  text-indent: -9999px;
+	}
+}
+
+#search-01 {
+	font-size: 50px;
+	input {
+		font-size: 100%;
+		width: 100%;
+	}
+}
+#search-02 {
+	.search-nav {
+		float: right;
+		display: block;
+	}
+	.uk-grid {
+		margin-bottom: 10px;
+		margin-left: -10px;
+		> * {
+			
+		}
+	}
+	.white-panel {
+		padding: 20px;
+		text-align: center;
+		max-height: 100px;
+		.img {
+			img {
+				max-height: 100px;
+			}
+		}
+		.text {
+			max-height: 100px;
+			dt {
+				border-bottom: 1px dotted $color-01;
+				color: $color-01;
+				margin-bottom: 5px;
+			}
+			dd {
+				margin-bottom: 5px;
+				text-align: center;
+			}
+		}
+	}
+}
+
+//プロフェール------------------------------------------------
+#profile-01 { 
+	ul {
+		list-style: none;
+		padding-left: 0;
+		li {
+			margin-bottom: 15px
+		}
+	}
+}
+
+//チャンネル------------------------------------------------
+#channel-02 {
+	color: white;
+	display: inline;
+	.uk-scrollspy-init-inview {
+		margin-bottom: 20px;
+	}
+	.channel-panel-01 {
+		box-shadow: 0 5px 10px #777;
+		background-color: $color-03;
+		border-radius: 5px;
+		.text {
+			font-size: 20px;
+			padding: 0 auto;
+			display:table-cell;
+			vertical-align: middle;
+			text-align: center;
+			line-height: 1.1em;
+		}
+		a {
+			color: white;
+		}
+	}
+	.channel-panel-02 {
+		box-shadow: 0 5px 10px #777;
+		background-color: red;
+		border-radius: 5px;
+		.text {
+			font-size: 15px;
+			display:table-cell;
+			vertical-align: middle;
+			text-align: center;
+		}
+		a {
+			color: white;
+		}
+	}
+}
+
+//個別チャンネル------------------------------------------------
+
+
+#channel01-02 {
+	text-align: center;
+	.tit {
+		margin-bottom: 30px;
+	}
+	.white-panel {
+		padding: 20px;
+	}
+	.text {
+		line-height: 2em;
+		padding: 6% 0 10% 0;
+	}
+	.uk-grid {
+		margin-bottom: 30px;
+		margin-left: -20px;
+		> * {
+			padding-left: 20px;
+		}
+	}
+	section {
+		margin-bottom: 20px;
+	}
+}
+
+//会員登録------------------------------------------------
+.register-form {
+	.uk-container-center {
+		padding-top: 20px;
+		padding-bottom: 40px;
+		p {
+			padding-left:10px;
+		}
+		h3 {
+			text-align: center;
+		}
+		table {
+			max-width: 700px;
+			margin-bottom: 20px;
+			text-align: center;
+			.white-font {
+				color: white;
+				font-size: 15px;
+			}
+		}
+		.submit {
+			text-align: center;
+		}
+	}
+}
+
+// チャット----------------------------------------------
+#chat-01 {
+	.white-panel {
+		padding: 30px;
+	}
+	
+		.text {
+			margin-bottom: 20px;
+		}
+}
+
+
